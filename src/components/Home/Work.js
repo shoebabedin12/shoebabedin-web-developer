@@ -1,0 +1,200 @@
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import axios from "axios";
+import cheerio from "cheerio";
+
+const Work = () => {
+  const [url, setUrl] = useState("");
+  const [title, setTitle] = useState("");
+  const [thumbnail, setThumbnail] = useState("");
+
+  const fetchWebsiteInfo = async () => {
+    try {
+      const response = await axios.get(url);
+      const html = response.data;
+
+      // Parse the HTML content to find the OGP metadata
+      const parser = new DOMParser();
+      const doc = parser.parseFromString(html, 'text/html');
+
+      const ogpTitle = doc.querySelector('meta[property="og:title"]');
+      const ogpImage = doc.querySelector('meta[property="og:image"]');
+
+      if (ogpTitle) {
+        setTitle(ogpTitle.getAttribute('content'));
+      }
+
+      if (ogpImage) {
+        setThumbnail(ogpImage.getAttribute('content'));
+      }
+    } catch (error) {
+      console.error('Error fetching website info:', error);
+    }
+  };
+  return (
+    <>
+      <div id="fh5co-work" className="fh5co-bg-dark">
+        <div className="container">
+          <div className="row animate-box">
+            <div className="col-md-12 text-center fh5co-heading">
+              <h2>Work</h2>
+            </div>
+          </div>
+          <div className="row">
+            <div className="col-md-3 text-center col-padding animate-box">
+              <Link
+                to="https://www.tribel.com/"
+                target="_blank"
+                className="work"
+              >
+                <img src={require("./../../assets/images/portfolio/tribel-public-trending.png")} className="img-fluid" alt="" />
+                <div className="desc">
+                  <h3>Tribel</h3>
+                </div>
+              </Link>
+             
+            </div>
+            <div className="col-md-3 text-center col-padding animate-box">
+              <Link
+                to="https://www.m.tribel.com/"
+                target="_blank"
+                className="work"
+                style={{
+                  backgroundImage:
+                    "url(./../../../assets/images/portfolio/tribel-public-trending.png)",
+                }}
+              >
+                <div className="desc">
+                  <h3>Tribel Mobile</h3>
+                </div>
+              </Link>
+            </div>
+
+            <div className="col-md-3 text-center col-padding animate-box">
+              <Link
+                to="https://www.thedoodleinc.com/"
+                target="_blank"
+                className="work"
+                style={{
+                  backgroundImage:
+                    "url(./../../../assets/images/portfolio/thedoodleinc.png)",
+                }}
+              >
+                <div className="desc">
+                  <h3>The Doodle Inc.</h3>
+                </div>
+              </Link>
+            </div>
+            <div className="col-md-3 text-center col-padding animate-box">
+              <Link
+                to="https://www.ctoforumbd.org/"
+                target="_blank"
+                className="work"
+                style={{
+                  backgroundImage:
+                    "url(./../../../assets/images/portfolio/ctoforumbd-org.png)",
+                }}
+              >
+                <div className="desc">
+                  <h3>CTO Forum</h3>
+                </div>
+              </Link>
+            </div>
+            <div className="col-md-3 text-center col-padding animate-box">
+              <Link
+                to="https://www.famglam.co/"
+                target="_blank"
+                className="work"
+                style={{
+                  backgroundImage:
+                    "url(./../../../assets/images/portfolio/famglam-co.png)",
+                }}
+              >
+                <div className="desc">
+                  <h3>FamGlam</h3>
+                </div>
+              </Link>
+            </div>
+            <div className="col-md-3 text-center col-padding animate-box">
+              <Link
+                to="https://shangon.shop/"
+                target="_blank"
+                className="work"
+                style={{
+                  backgroundImage:
+                    "url(./../../../assets/images/portfolio/shangon-shop.png)",
+                }}
+              >
+                <div className="desc">
+                  <h3>Shangon-Shop</h3>
+                </div>
+              </Link>
+            </div>
+            <div className="col-md-3 text-center col-padding animate-box">
+              <Link
+                to="http://www.thedorothydraper.com/"
+                target="_blank"
+                className="work"
+                style={{
+                  backgroundImage:
+                    "url(./../../../assets/images/portfolio/thedorothydraper.png)",
+                }}
+              >
+                <div className="desc">
+                  <h3>The Dorothy Draper</h3>
+                </div>
+              </Link>
+            </div>
+            <div className="col-md-3 text-center col-padding animate-box">
+              <Link
+                to="http://www.apppeople.net/"
+                target="_blank"
+                className="work"
+                style={{
+                  backgroundImage:
+                    "url(./../../../assets/images/portfolio/apppeople-net.png)",
+                }}
+              >
+                <div className="desc">
+                  <h3>App People</h3>
+                </div>
+              </Link>
+            </div>
+            <div className="col-md-3 text-center col-padding animate-box">
+              <Link
+                to="https://www.hmweddings.com/"
+                target="_blank"
+                className="work"
+                style={{
+                  backgroundImage:
+                    "url(./../../../assets/images/portfolio/hmweddings.png)",
+                }}
+              >
+                <div className="desc">
+                  <h3>HM Weddings</h3>
+                </div>
+              </Link>
+            </div>
+            <div className="col-md-3 text-center col-padding animate-box">
+              <Link
+                to="https://www.hmexpoprivateltd.com"
+                target="_blank"
+                className="work"
+                style={{
+                  backgroundImage:
+                    "url(./../../../assets/images/portfolio/hmexpoprivateltd.png)",
+                }}
+              >
+                <div className="desc">
+                  <h3>HM Expo Private Ltd</h3>
+                </div>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Work;
