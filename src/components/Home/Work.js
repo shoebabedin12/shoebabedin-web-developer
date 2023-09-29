@@ -15,20 +15,20 @@ const Work = () => {
 
       // Parse the HTML content to find the OGP metadata
       const parser = new DOMParser();
-      const doc = parser.parseFromString(html, 'text/html');
+      const doc = parser.parseFromString(html, "text/html");
 
       const ogpTitle = doc.querySelector('meta[property="og:title"]');
       const ogpImage = doc.querySelector('meta[property="og:image"]');
 
       if (ogpTitle) {
-        setTitle(ogpTitle.getAttribute('content'));
+        setTitle(ogpTitle.getAttribute("content"));
       }
 
       if (ogpImage) {
-        setThumbnail(ogpImage.getAttribute('content'));
+        setThumbnail(ogpImage.getAttribute("content"));
       }
     } catch (error) {
-      console.error('Error fetching website info:', error);
+      console.error("Error fetching website info:", error);
     }
   };
   return (
@@ -47,23 +47,27 @@ const Work = () => {
                 target="_blank"
                 className="work"
               >
-                <img src={require("./../../assets/images/portfolio/tribel-public-trending.png")} className="img-fluid" alt="" />
+                <img
+                  src={require("./../../assets/images/portfolio/tribel-public-trending.png")}
+                  className="img-fluid"
+                  alt=""
+                />
                 <div className="desc">
                   <h3>Tribel</h3>
                 </div>
               </Link>
-             
             </div>
             <div className="col-md-3 text-center col-padding animate-box">
               <Link
                 to="https://www.m.tribel.com/"
                 target="_blank"
                 className="work"
-                style={{
-                  backgroundImage:
-                    "url(./../../../assets/images/portfolio/tribel-public-trending.png)",
-                }}
               >
+                <img
+                  src={require("./../../assets/images/portfolio/m-tribel-public-trending.png")}
+                  className="img-fluid"
+                  alt=""
+                />
                 <div className="desc">
                   <h3>Tribel Mobile</h3>
                 </div>
@@ -75,11 +79,12 @@ const Work = () => {
                 to="https://www.thedoodleinc.com/"
                 target="_blank"
                 className="work"
-                style={{
-                  backgroundImage:
-                    "url(./../../../assets/images/portfolio/thedoodleinc.png)",
-                }}
               >
+                <img
+                  src={require("./../../assets/images/portfolio/thedoodleinc.png")}
+                  className="img-fluid"
+                  alt=""
+                />
                 <div className="desc">
                   <h3>The Doodle Inc.</h3>
                 </div>
@@ -90,11 +95,12 @@ const Work = () => {
                 to="https://www.ctoforumbd.org/"
                 target="_blank"
                 className="work"
-                style={{
-                  backgroundImage:
-                    "url(./../../../assets/images/portfolio/ctoforumbd-org.png)",
-                }}
               >
+                <img
+                  src={require("./../../assets/images/portfolio/ctoforumbd-org.png")}
+                  className="img-fluid"
+                  alt=""
+                />
                 <div className="desc">
                   <h3>CTO Forum</h3>
                 </div>
@@ -102,29 +108,28 @@ const Work = () => {
             </div>
             <div className="col-md-3 text-center col-padding animate-box">
               <Link
-                to="https://www.famglam.co/"
+                // to="https://www.famglam.co/"
+                to="https://shoebabedin12.github.io/demo/"
                 target="_blank"
                 className="work"
-                style={{
-                  backgroundImage:
-                    "url(./../../../assets/images/portfolio/famglam-co.png)",
-                }}
               >
+                <img
+                  src={require("./../../assets/images/portfolio/famglam.png")}
+                  className="img-fluid"
+                  alt=""
+                />
                 <div className="desc">
                   <h3>FamGlam</h3>
                 </div>
               </Link>
             </div>
             <div className="col-md-3 text-center col-padding animate-box">
-              <Link
-                to="https://shangon.shop/"
-                target="_blank"
-                className="work"
-                style={{
-                  backgroundImage:
-                    "url(./../../../assets/images/portfolio/shangon-shop.png)",
-                }}
-              >
+              <Link to="https://shangon.shop/" target="_blank" className="work">
+                <img
+                  src={require("./../../assets/images/portfolio/shangon-shop.png")}
+                  className="img-fluid"
+                  alt=""
+                />
                 <div className="desc">
                   <h3>Shangon-Shop</h3>
                 </div>
@@ -135,11 +140,12 @@ const Work = () => {
                 to="http://www.thedorothydraper.com/"
                 target="_blank"
                 className="work"
-                style={{
-                  backgroundImage:
-                    "url(./../../../assets/images/portfolio/thedorothydraper.png)",
-                }}
               >
+                <img
+                  src={require("./../../assets/images/portfolio/thedorothydraper.png")}
+                  className="img-fluid"
+                  alt=""
+                />
                 <div className="desc">
                   <h3>The Dorothy Draper</h3>
                 </div>
@@ -150,11 +156,12 @@ const Work = () => {
                 to="http://www.apppeople.net/"
                 target="_blank"
                 className="work"
-                style={{
-                  backgroundImage:
-                    "url(./../../../assets/images/portfolio/apppeople-net.png)",
-                }}
               >
+                <img
+                  src={require("./../../assets/images/portfolio/apppeople-net.png")}
+                  className="img-fluid"
+                  alt=""
+                />
                 <div className="desc">
                   <h3>App People</h3>
                 </div>
@@ -165,11 +172,12 @@ const Work = () => {
                 to="https://www.hmweddings.com/"
                 target="_blank"
                 className="work"
-                style={{
-                  backgroundImage:
-                    "url(./../../../assets/images/portfolio/hmweddings.png)",
-                }}
               >
+                <img
+                  src={require("./../../assets/images/portfolio/hmweddings.png")}
+                  className="img-fluid"
+                  alt=""
+                />
                 <div className="desc">
                   <h3>HM Weddings</h3>
                 </div>
@@ -180,16 +188,98 @@ const Work = () => {
                 to="https://www.hmexpoprivateltd.com"
                 target="_blank"
                 className="work"
-                style={{
-                  backgroundImage:
-                    "url(./../../../assets/images/portfolio/hmexpoprivateltd.png)",
-                }}
               >
+                <img
+                  src={require("./../../assets/images/portfolio/hmexpoprivateltd.png")}
+                  className="img-fluid"
+                  alt=""
+                />
                 <div className="desc">
                   <h3>HM Expo Private Ltd</h3>
                 </div>
               </Link>
             </div>
+            <div className="col-md-3 text-center col-padding animate-box">
+              <Link
+                to="https://www.inspaceatelier.com/"
+                target="_blank"
+                className="work"
+              >
+                <img
+                  src={require("./../../assets/images/portfolio/inspaceatelier.png")}
+                  className="img-fluid"
+                  alt=""
+                />
+                <div className="desc">
+                  <h3>Inspace-Atelier</h3>
+                </div>
+              </Link>
+            </div>
+            <div className="col-md-3 text-center col-padding animate-box">
+              <Link
+                to="https://watchfaceswizard.com/"
+                target="_blank"
+                className="work"
+              >
+                <img
+                  src={require("./../../assets/images/portfolio/watchfaceswizard.png")}
+                  className="img-fluid"
+                  alt=""
+                />
+                <div className="desc">
+                  <h3>Watch-Faces-Wizard</h3>
+                </div>
+              </Link>
+            </div>
+            <div className="col-md-3 text-center col-padding animate-box">
+              <Link
+                to="http://smartoffice.io/"
+                target="_blank"
+                className="work"
+              >
+                <img
+                  src={require("./../../assets/images/portfolio/smartoffice.png")}
+                  className="img-fluid"
+                  alt=""
+                />
+                <div className="desc">
+                  <h3>Smart-Office</h3>
+                </div>
+              </Link>
+            </div>
+            <div className="col-md-3 text-center col-padding animate-box">
+              <Link
+                to="https://www.byslglobal.com/"
+                target="_blank"
+                className="work"
+              >
+                <img
+                  src={require("./../../assets/images/portfolio/byslglobal.png")}
+                  className="img-fluid"
+                  alt=""
+                />
+                <div className="desc">
+                  <h3>BYSL-Global-Technologies</h3>
+                </div>
+              </Link>
+            </div>
+            <div className="col-md-3 text-center col-padding animate-box">
+              <Link
+                to="https://www.intellidigital.com/"
+                target="_blank"
+                className="work"
+              >
+                <img
+                  src={require("./../../assets/images/portfolio/intellidigital.png")}
+                  className="img-fluid"
+                  alt=""
+                />
+                <div className="desc">
+                  <h3>Intelli-Digital</h3>
+                </div>
+              </Link>
+            </div>
+          
           </div>
         </div>
       </div>

@@ -7,10 +7,16 @@ import Portfolio from "../components/Home/Portfolio";
 import HireMe from "../components/Home/HireMe";
 import Contact from "../components/Home/Contact";
 import Banner from "../components/Home/Banner";
+import { Helmet } from "react-helmet";
 
 const Home = () => {
   return (
     <>
+      <Helmet>
+        <meta charSet="utf-8" />
+        <title>Md Shoeb Abedin</title>
+        <link rel="canonical" href="http://mysite.com/example" />
+      </Helmet>
       <Banner />
       <About />
       <Resume />
