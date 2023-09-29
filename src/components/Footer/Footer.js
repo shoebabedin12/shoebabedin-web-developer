@@ -9,14 +9,7 @@ const Footer = () => {
           <div className="row">
             <div className="col-md-12 text-center">
               <p>
-                &copy; 2022 All Rights Reserved. 
-                Designed by{" "}
-                <Link className=""
-                  to="linkedin.com/in/shoeb-abedin-bab27515a"
-                  target="_blank"
-                >
-                  Shoeb Abedin
-                </Link>
+                &copy; 2022 All Rights Reserved.
               </p>
             </div>
           </div>

@@ -812,9 +812,10 @@ figure {
 @media screen and (max-width: 768px) {
   .work .desc {
     opacity: 1;
-    background: rgba(10, 102, 194, 0.9);
+    background: rgba(255, 255, 255, 0.9);
   }
   .work .desc h3 {
+    color: var(--color);
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0);
   }
@@ -1037,7 +1038,7 @@ figure {
 }
 
 #fh5co-footer {
-  padding: 50px 0;
+  padding: 20px 0;
   float: left;
   width: 100%;
 }
@@ -1555,4 +1556,5 @@ input[type="text"] {
 
 #fh5co-consult .btn{
   background-color: var(--backgroundColor);
+  border: 0;
 }

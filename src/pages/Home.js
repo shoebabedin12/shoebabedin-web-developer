@@ -12,11 +12,6 @@ import { Helmet } from "react-helmet";
 const Home = () => {
   return (
     <>
-      <Helmet>
-        <meta charSet="utf-8" />
-        <title>Md Shoeb Abedin</title>
-        <link rel="canonical" href="http://mysite.com/example" />
-      </Helmet>
       <Banner />
       <About />
       <Resume />
