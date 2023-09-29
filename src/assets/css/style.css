@@ -852,12 +852,13 @@ figure {
 }
 #fh5co-started .fh5co-heading p {
   color: rgba(255, 255, 255, 0.8);
+  margin: 0 auto;
 }
 #fh5co-started .btn {
   height: 54px;
   border: none !important;
   background: #fff;
-  color: rgba(10, 102, 194, 0.9);
+  color: var(--color);
   font-size: 16px;
   text-transform: uppercase;
   font-weight: 400;
@@ -1551,3 +1552,7 @@ input[type="text"] {
 } */
 
 /* isotop */
+
+#fh5co-consult .btn{
+  background-color: var(--backgroundColor);
+}

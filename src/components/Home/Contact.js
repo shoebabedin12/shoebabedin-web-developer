@@ -4,11 +4,12 @@ const Contact = () => {
   return (
     <>
       <div id="fh5co-consult">
-        <div
-          className="video fh5co-video"
-          style={{backgroundImage: `url(./../../../assets/images/cover_bg_1.jpg)`}}
-          // style={{backgroundImage: "url(images/cover_bg_1.jpg)"}}
-        >
+        <div className="video fh5co-video">
+          <img
+            src={require("./../../assets/images/cover_bg_1.jpg")}
+            className="img-fluid"
+            alt=""
+          />
           <div className="overlay"></div>
         </div>
         <div className="choose animate-box">

@@ -82,4 +82,8 @@ button {
     box-shadow: none;
   }
 
+
+  .progress-bar{
+    background-color: var(--backgroundColor) !important;
+  }
   
