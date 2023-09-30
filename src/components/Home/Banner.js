@@ -1,8 +1,8 @@
 import React from "react";
-import {  AiOutlineTwitter } from "react-icons/ai";
-import {  BsDribbble } from "react-icons/bs";
+import { AiOutlineTwitter } from "react-icons/ai";
+import { BsDribbble } from "react-icons/bs";
 import { FaFacebookSquare, FaLinkedinIn } from "react-icons/fa";
-import {Link} from "react-router-dom"
+import { Link } from "react-router-dom";
 
 const Banner = () => {
   return (
