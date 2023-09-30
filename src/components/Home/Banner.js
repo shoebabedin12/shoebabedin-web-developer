@@ -54,6 +54,12 @@ const Banner = () => {
                     <li>
                       <SocialIcon url="https://github.com/shoebabedin12" />
                     </li>
+                    <li>
+                      <SocialIcon url="https://www.fiverr.com/shoebabedin12?up_rollout=true" />
+                    </li>
+                    <li>
+                      <SocialIcon url="https://www.upwork.com/freelancers/~018286ce4ce4d7084b" />
+                    </li>
                   </ul>
                 </div>
               </div>
