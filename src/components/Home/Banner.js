@@ -8,12 +8,15 @@ const Banner = () => {
         id="fh5co-header"
         className="hero fh5co-cover js-fullheight"
         role="banner"
-        style={{
-          backgroundImage: "url(./../../../assets/images/cover_bg_3.jpg)"
-        }}
         data-stellar-background-ratio="0.5"
       >
-        <div className="overlay"></div>
+        <div className="overlay">
+          {/* <img
+            src={require("./../../assets/images/cover_bg_3.jpg")}
+            alt="cover"
+            className="bg img-fluid"
+          /> */}
+        </div>
         <div className="container">
           <div className="row">
             <div className="col-md-12 text-center position-relative">
@@ -35,26 +38,23 @@ const Banner = () => {
                   <h3>
                     <span>Web Developer</span>
                   </h3>
-                  <p></p>
-                  <p>
-                    <ul className="fh5co-social-icons">
-                      <li>
-                        <SocialIcon url="https://twitter.com/shoebabedin12" />
-                      </li>
-                      <li>
-                        <SocialIcon url="https://www.facebook.com/shoeb.abidin" />
-                      </li>
-                      <li>
-                        <SocialIcon url="https://www.linkedin.com/in/shoeb-abedin-bab27515a" />
-                      </li>
-                      <li>
-                        <SocialIcon url="https://dribbble.com/shoebabeidn12" />
-                      </li>
-                      <li>
-                        <SocialIcon url="https://github.com/shoebabedin12" />
-                      </li>
-                    </ul>
-                  </p>
+                  <ul className="fh5co-social-icons">
+                    <li>
+                      <SocialIcon url="https://twitter.com/shoebabedin12" />
+                    </li>
+                    <li>
+                      <SocialIcon url="https://www.facebook.com/shoeb.abidin" />
+                    </li>
+                    <li>
+                      <SocialIcon url="https://www.linkedin.com/in/shoeb-abedin-bab27515a" />
+                    </li>
+                    <li>
+                      <SocialIcon url="https://dribbble.com/shoebabeidn12" />
+                    </li>
+                    <li>
+                      <SocialIcon url="https://github.com/shoebabedin12" />
+                    </li>
+                  </ul>
                 </div>
               </div>
             </div>
