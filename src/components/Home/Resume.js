@@ -1,7 +1,31 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import { FaGraduationCap, FaSuitcase } from "react-icons/fa";
 
 const Resume = () => {
+  const [data, setData] = useState([]);
+  const [education, setEducation] = useState([]);
+
+  useEffect(() => {
+    const workExperience = async () => {
+      await axios
+        .get("/json/work-experience.json")
+        .then((res) => setData(res.data))
+        .catch((err) => console.log(err));
+    };
+
+
+
+    const educationData = async () => {
+      await axios
+        .get("/json/education.json")
+        .then((res) => setEducation(res.data))
+        .catch((err) => console.log(err));
+    };
+
+    workExperience();
+    educationData();
+  }, []);
   return (
     <>
       <div id="fh5co-resume" className="fh5co-bg-color">
@@ -19,91 +43,51 @@ const Resume = () => {
                     <h3>Work Experience</h3>
                   </div>
                 </li>
-                <li className="timeline-inverted animate-box">
-                  <div className="timeline-badge">
-                    <FaSuitcase />
-                  </div>
-                  <div className="timeline-panel">
-                    <div className="timeline-heading">
-                      <h3 className="timeline-title">Web Developer</h3>
-                      <span className="company">
-                        BYSL Global Technology Group - May- 2021 - Current
-                      </span>
+                {data.map((item) => (
+                  <li key={item.id} className={` animate-box ${item.id % 2 === 1 ? "timeline-unverted" : "timeline-inverted"} `}>
+                    <div className="timeline-badge">
+                      <FaSuitcase />
                     </div>
-                  </div>
-                </li>
-                <li className="animate-box timeline-unverted">
-                  <div className="timeline-badge">
-                    <FaSuitcase />
-                  </div>
-                  <div className="timeline-panel">
-                    <div className="timeline-heading">
-                      <h3 className="timeline-title">Web Developer</h3>
-                      <span className="company">
-                        Doodle Inc. - Jan- 2021 - May 2022
-                      </span>
+                    <div className="timeline-panel">
+                      <div className="timeline-heading">
+                        <h3 className="timeline-title">{item.designation}</h3>
+                        <span className="company">
+                          {item.companyName} - {item.startDate} -{" "}
+                          {item.endDate === "current"
+                            ? "Current"
+                            : item.endDate}
+                        </span>
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li className="timeline-inverted animate-box">
-                  <div className="timeline-badge">
-                    <FaSuitcase />
-                  </div>
-                  <div className="timeline-panel">
-                    <div className="timeline-heading">
-                      <h3 className="timeline-title">Web Designer</h3>
-                      <span className="company">
-                        HM Expo Private Ltd. - 2020 - 2021
-                      </span>
-                    </div>
-                  </div>
-                </li>
+                  </li>
+                ))}
+              </ul>
 
-                <br />
+              <ul className="timeline">
                 <li className="timeline-heading text-center animate-box">
                   <div>
                     <h3>Education</h3>
                   </div>
                 </li>
-                <li className="animate-box timeline-unverted">
-                  <div className="timeline-badge">
-                    <FaGraduationCap />
-                  </div>
-                  <div className="timeline-panel">
-                    <div className="timeline-heading">
-                      <h3 className="timeline-title">Bachelors Degree</h3>
-                      <span className="company">
-                        Central University of Science & Technology - 2019 - 2022
-                      </span>
+                {education.map((item) => (
+                  <li key={item.id} className={` animate-box ${item.id % 2 === 1 ? "timeline-unverted" : "timeline-inverted"} `}>
+                    <div className="timeline-badge">
+                      <FaGraduationCap />
                     </div>
-                  </div>
-                </li>
-                <li className="timeline-inverted animate-box">
-                  <div className="timeline-badge">
-                    <FaGraduationCap />
-                  </div>
-                  <div className="timeline-panel">
-                    <div className="timeline-heading">
-                      <h3 className="timeline-title">HSC</h3>
-                      <span className="company">
-                        Technical School And College- 2010 - 2012
-                      </span>
+                    <div className="timeline-panel">
+                      <div className="timeline-heading">
+                        <h3 className="timeline-title">{item.degree}</h3>
+                        <span className="company">
+                          {item.instituteName} - {item.startDate} -{" "}
+                          {item.endDate === "current"
+                            ? "Current"
+                            : item.endDate}
+                        </span>
+                      </div>
                     </div>
-                  </div>
-                </li>
-                <li className="animate-box timeline-unverted">
-                  <div className="timeline-badge">
-                    <FaGraduationCap />
-                  </div>
-                  <div className="timeline-panel">
-                    <div className="timeline-heading">
-                      <h3 className="timeline-title">SSC</h3>
-                      <span className="company">
-                        Technical School And College- 2008 - 2010
-                      </span>
-                    </div>
-                  </div>
-                </li>
+                  </li>
+                ))}
+           
               </ul>
             </div>
           </div>

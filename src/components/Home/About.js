@@ -1,7 +1,20 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import { SocialIcon } from "react-social-icons";
 
 const About = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      await axios
+        .get("/json/social.json")
+        .then((res) => setData(res.data))
+        .catch((err) => console.log(err));
+    };
+
+    fetchData();
+  }, []);
   return (
     <>
       <div id="fh5co-about" className="animate-box">
@@ -36,7 +49,7 @@ const About = () => {
             </div>
             <div className="col-md-8">
               <h1>Meet Md Shoeb Abedin, Your Expert Web Developer</h1>
-              <div class="description">
+              <div className="description">
                 <p>
                   Hello, I am a passionate and experienced Web Developer based
                   in Bangladesh with **3 years of expertise** in web
@@ -47,46 +60,28 @@ const About = () => {
                   With a keen eye for design and a deep understanding of the
                   latest web technologies, I can bring your ideas to life. My
                   focus is on delivering{" "}
-                  <span class="highlight">
+                  <span className="highlight">
                     top-notch, user-friendly, and responsive websites
                   </span>{" "}
                   that not only meet but exceed your expectations.
                 </p>
                 <p>
                   Whether you need a{" "}
-                  <span class="highlight">personal portfolio</span>, an{" "}
-                  <span class="highlight">e-commerce platform</span>, or a{" "}
-                  <span class="highlight">business website</span>, I am here to
-                  transform your vision into reality. Let's collaborate and
+                  <span className="highlight">personal portfolio</span>, an{" "}
+                  <span className="highlight">e-commerce platform</span>, or a{" "}
+                  <span className="highlight">business website</span>, I am here
+                  to transform your vision into reality. Let's collaborate and
                   create something extraordinary for your online presence!
                 </p>
               </div>
 
-              <p>
-                <ul className="fh5co-social-icons">
-                  <li>
-                    <SocialIcon url="https://twitter.com/shoebabedin12" />
+              <ul className="fh5co-social-icons">
+                {data.map((item) => (
+                  <li key={item.id} className="item.id">
+                    <SocialIcon url={item.slug} />
                   </li>
-                  <li>
-                    <SocialIcon url="https://www.facebook.com/shoeb.abidin" />
-                  </li>
-                  <li>
-                    <SocialIcon url="https://www.linkedin.com/in/shoeb-abedin-bab27515a" />
-                  </li>
-                  <li>
-                    <SocialIcon url="https://dribbble.com/shoebabeidn12" />
-                  </li>
-                  <li>
-                    <SocialIcon url="https://github.com/shoebabedin12" />
-                  </li>
-                  <li>
-                      <SocialIcon url="https://www.fiverr.com/shoebabedin12?up_rollout=true" />
-                    </li>
-                    <li>
-                      <SocialIcon url="https://www.upwork.com/freelancers/~018286ce4ce4d7084b" />
-                    </li>
-                </ul>
-              </p>
+                ))}
+              </ul>
             </div>
           </div>
         </div>

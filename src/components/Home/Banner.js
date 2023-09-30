@@ -1,7 +1,20 @@
-import React from "react";
+import axios from "axios";
+import React, { useEffect, useState } from "react";
 import { SocialIcon } from "react-social-icons";
 
 const Banner = () => {
+  const [data, setData] = useState([]);
+
+  useEffect(() => {
+    const fetchData = async () => {
+      await axios
+        .get("/json/social.json")
+        .then((res) => setData(res.data))
+        .catch((err) => console.log(err));
+    };
+
+    fetchData();
+  }, []);
   return (
     <>
       <header
@@ -11,11 +24,7 @@ const Banner = () => {
         data-stellar-background-ratio="0.5"
       >
         <div className="overlay">
-          {/* <img
-            src={require("./../../assets/images/cover_bg_3.jpg")}
-            alt="cover"
-            className="bg img-fluid"
-          /> */}
+          
         </div>
         <div className="container">
           <div className="row">
@@ -39,27 +48,11 @@ const Banner = () => {
                     <span>Web Developer</span>
                   </h3>
                   <ul className="fh5co-social-icons">
-                    <li>
-                      <SocialIcon url="https://twitter.com/shoebabedin12" />
-                    </li>
-                    <li>
-                      <SocialIcon url="https://www.facebook.com/shoeb.abidin" />
-                    </li>
-                    <li>
-                      <SocialIcon url="https://www.linkedin.com/in/shoeb-abedin-bab27515a" />
-                    </li>
-                    <li>
-                      <SocialIcon url="https://dribbble.com/shoebabeidn12" />
-                    </li>
-                    <li>
-                      <SocialIcon url="https://github.com/shoebabedin12" />
-                    </li>
-                    <li>
-                      <SocialIcon url="https://www.fiverr.com/shoebabedin12?up_rollout=true" />
-                    </li>
-                    <li>
-                      <SocialIcon url="https://www.upwork.com/freelancers/~018286ce4ce4d7084b" />
-                    </li>
+                    {data.map((item) => (
+                      <li key={item.id} className="item.id">
+                        <SocialIcon url={item.slug} />
+                      </li>
+                    ))}
                   </ul>
                 </div>
               </div>

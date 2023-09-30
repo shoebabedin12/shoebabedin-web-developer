@@ -1,0 +1,122 @@
+[
+  {
+    "id": 0,
+    "title": "BYSL Global Technology Group",
+    "projetList": [
+      {
+        "id": 0,
+        "title": "Smart-Office",
+        "img": "smartoffice.png",
+        "slug": "http://smartoffice.io/"
+      },
+      {
+        "id": 1,
+        "title": "BYSL-Global-Technologies",
+        "img": "byslglobal.png",
+        "slug": "https://www.byslglobal.com/"
+      },
+      {
+        "id": 2,
+        "title": "Intelli-Digital",
+        "img": "intellidigital.png",
+        "slug": "https://www.intellidigital.com/"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "title": "Doodle Inc.",
+    "projetList": [
+      {
+        "id": 0,
+        "title": "Tribel",
+        "img": "tribel-public-trending.png",
+        "slug": "https://www.tribel.com/"
+      },
+      {
+        "id": 1,
+        "title": "Tribel Mobile",
+        "img": "m-tribel-public-trending.png",
+        "slug": "https://www.m.tribel.com/"
+      },
+      {
+        "id": 2,
+        "title": "The Doodle Inc.",
+        "img": "thedoodleinc.png",
+        "slug": "https://www.thedoodleinc.com/"
+      },
+      {
+        "id": 3,
+        "title": "The Doodle Inc.",
+        "img": "thedoodleinc.png",
+        "slug": "https://www.thedoodleinc.com/"
+      },
+      {
+        "id": 4,
+        "title": "CTO Forum",
+        "img": "ctoforumbd-org.png",
+        "slug": "https://www.ctoforumbd.org/"
+      },
+      {
+        "id": 5,
+        "title": "FamGlam",
+        "img": "famglam.png",
+        "slug": "https://shoebabedin12.github.io/demo/"
+      },
+      {
+        "id": 6,
+        "title": "Shangon-Shop",
+        "img": "shangon-shop.png",
+        "slug": "https://shangon.shop/"
+      },
+      {
+        "id": 7,
+        "title": "The Dorothy Draper",
+        "img": "thedorothydraper.png",
+        "slug": "http://www.thedorothydraper.com/"
+      },
+      {
+        "id": 7,
+        "title": "App People",
+        "img": "apppeople-net.png",
+        "slug": "http://www.apppeople.net/"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "HM Expo Private Ltd.",
+    "projetList": [
+      {
+        "id": 0,
+        "title": "HM Weddings",
+        "img": "hmweddings.png",
+        "slug": "https://www.hmweddings.com/"
+      },
+      {
+        "id": 1,
+        "title": "HM Expo Private Ltd.",
+        "img": "hmexpoprivateltd.png",
+        "slug": "https://www.hmexpoprivateltd.com"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "Freelancing Project",
+    "projetList": [
+      {
+        "id": 0,
+        "title": "Inspace-Atelier",
+        "img": "inspaceatelier.png",
+        "slug": "https://www.inspaceatelier.com/"
+      },
+      {
+        "id": 1,
+        "title": "Watch-Faces-Wizard",
+        "img": "watchfaceswizard.png",
+        "slug": "https://watchfaceswizard.com/"
+      }
+    ]
+  }
+]

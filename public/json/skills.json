@@ -1,0 +1,124 @@
+[
+  {
+    "id": 0,
+    "title": "Frontend",
+    "stackList": [
+      {
+        "id": 0,
+        "img": "HTML5.png",
+        "title": "HTML5"
+      },
+      {
+        "id": 1,
+        "img": "CSS3.png",
+        "title": "CSS3"
+      },
+      {
+        "id": 2,
+        "img": "Sass.png",
+        "title": "Sass"
+      },
+      {
+        "id": 3,
+        "img": "",
+        "title": "jQuery"
+      },
+      {
+        "id": 4,
+        "img": "Bootstrap.png",
+        "title": "Bootstrap"
+      },
+      {
+        "id": 4,
+        "img": "",
+        "title": "React-Bootstrap"
+      },
+      {
+        "id": 5,
+        "img": "Tailwind-CSS.png",
+        "title": "TailwindCss"
+      },
+      {
+        "id": 6,
+        "img": "",
+        "title": "React JS"
+      },
+      {
+        "id": 7,
+        "img": "Next.js.png",
+        "title": "Next JS"
+      },
+      {
+        "id": 7,
+        "img": "Angular.png",
+        "title": "Angular JS"
+      },
+      {
+        "id": 8,
+        "img": "JavaScript.png",
+        "title": "JavaScript"
+      },
+      {
+        "id": 8,
+        "img": "PostCSS.png",
+        "title": "PostCSS"
+      },
+      {
+        "id": 8,
+        "img": "React-Bootstrap.png",
+        "title": "React-Bootstrap"
+      },
+      {
+        "id": 8,
+        "img": "Redux.png",
+        "title": "Redux"
+      },
+      {
+        "id": 8,
+        "img": "TypeScript.png",
+        "title": "TypeScript"
+      },
+      {
+        "id": 8,
+        "img": "Vite.js.png",
+        "title": "Vite.js"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "Backend",
+    "stackList": [
+      {
+        "id": 1,
+        "img": "Node.js.png",
+        "title": "Node Js"
+      },
+      {
+        "id": 2,
+        "img": "Express.png",
+        "title": "Express Js"
+      },
+      {
+        "id": 3,
+        "img": "MongoDB.png",
+        "title": "MongoDB"
+      },
+      {
+        "id": 4,
+        "img": "MySQL.png",
+        "title": "MySQL"
+      },
+      {
+        "id": 4,
+        "img": "Mongoose.js.png",
+        "title": "MySQL"
+      },
+      {
+        "id": 4,
+        "img": "Sequelize.png",
+        "title": "Sequelize"
+      }
+    ]
+  }
+]

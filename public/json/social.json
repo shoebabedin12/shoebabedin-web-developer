@@ -1,0 +1,37 @@
+[
+  {
+    "id": 0,
+    "name": "Twitter",
+    "slug": "https://twitter.com/shoebabedin12"
+  },
+  {
+    "id": 1,
+    "name": "Facebook",
+    "slug": "https://www.facebook.com/shoeb.abidin"
+  },
+  {
+    "id": 2,
+    "name": "LinkedIn",
+    "slug": "https://www.linkedin.com/in/shoeb-abedin-bab27515a"
+  },
+  {
+    "id": 3,
+    "name": "Dribble",
+    "slug": "https://dribbble.com/shoebabeidn12"
+  },
+  {
+    "id": 4,
+    "name": "Github",
+    "slug": "https://github.com/shoebabedin12"
+  },
+  {
+    "id": 5,
+    "name": "Fiverr",
+    "slug": "https://www.fiverr.com/shoebabedin12?up_rollout=true"
+  },
+  {
+    "id": 6,
+    "name": "Upwork",
+    "slug": "https://www.upwork.com/freelancers/~018286ce4ce4d7084b"
+  }
+]

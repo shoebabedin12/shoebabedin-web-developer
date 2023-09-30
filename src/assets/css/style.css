@@ -380,10 +380,11 @@ figure {
 .fh5co-social-icons {
   margin: 0;
   padding: 0;
-  /* display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
-  gap: 8px; */
+  gap: 8px;
+  flex-wrap: wrap;
 }
 .fh5co-social-icons li {
   margin: 0;
@@ -415,6 +416,7 @@ figure {
   align-items: center;
   justify-content: start;
   gap: 8px;
+  flex-wrap: wrap;
 }
 #fh5co-about .fh5co-social-icons li {
   padding: 0;
