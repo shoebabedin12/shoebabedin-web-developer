@@ -35,11 +35,33 @@ const About = () => {
               </ul>
             </div>
             <div className="col-md-8">
-              <h2>Hello There!</h2>
-              <p>
-                I am Web Developer From Bangladesh.I have 3 years Experience on
-                frontend development.
-              </p>
+              <h1>Meet Md Shoeb Abedin, Your Expert Web Developer</h1>
+              <div class="description">
+                <p>
+                  Hello, I am a passionate and experienced Web Developer based
+                  in Bangladesh with **3 years of expertise** in web
+                  development. I specialize in crafting visually stunning and
+                  highly functional websites tailored to your unique needs.
+                </p>
+                <p>
+                  With a keen eye for design and a deep understanding of the
+                  latest web technologies, I can bring your ideas to life. My
+                  focus is on delivering{" "}
+                  <span class="highlight">
+                    top-notch, user-friendly, and responsive websites
+                  </span>{" "}
+                  that not only meet but exceed your expectations.
+                </p>
+                <p>
+                  Whether you need a{" "}
+                  <span class="highlight">personal portfolio</span>, an{" "}
+                  <span class="highlight">e-commerce platform</span>, or a{" "}
+                  <span class="highlight">business website</span>, I am here to
+                  transform your vision into reality. Let's collaborate and
+                  create something extraordinary for your online presence!
+                </p>
+              </div>
+
               <p>
                 <ul className="fh5co-social-icons">
                   <li>
