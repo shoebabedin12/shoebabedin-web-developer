@@ -1,8 +1,5 @@
 import React from "react";
-import { AiOutlineTwitter } from "react-icons/ai";
-import { BsDribbble } from "react-icons/bs";
-import { FaFacebookSquare, FaLinkedinIn } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { SocialIcon } from "react-social-icons";
 
 const Banner = () => {
   return (
@@ -11,7 +8,9 @@ const Banner = () => {
         id="fh5co-header"
         className="hero fh5co-cover js-fullheight"
         role="banner"
-        style={{backgroundImage:"url(./../../../assets/images/cover_bg_3.jpg)"}}
+        style={{
+          backgroundImage: "url(./../../../assets/images/cover_bg_3.jpg)"
+        }}
         data-stellar-background-ratio="0.5"
       >
         <div className="overlay"></div>
@@ -23,10 +22,12 @@ const Banner = () => {
                   className="display-tc js-fullheight animate-box"
                   data-animate-effect="fadeIn"
                 >
-                  <div
-                    className="profile-thumb"
-                  >
-                    <img src={require("./../../assets/images/user-3.jpeg")} className="img-fluid" alt="user" />
+                  <div className="profile-thumb">
+                    <img
+                      src={require("./../../assets/images/user-3.jpeg")}
+                      className="img-fluid"
+                      alt="user"
+                    />
                   </div>
                   <h1>
                     <span>MD Shoeb Abedin</span>
@@ -36,40 +37,21 @@ const Banner = () => {
                   </h3>
                   <p></p>
                   <p>
-
                     <ul className="fh5co-social-icons">
                       <li>
-                        <Link
-                          to="https://twitter.com/shoebabedin12"
-                          target="_blank"
-                          
-                        >
-                          <AiOutlineTwitter/>
-                        </Link>
+                        <SocialIcon url="https://twitter.com/shoebabedin12" />
                       </li>
                       <li>
-                        <Link
-                          to="https://www.facebook.com/shoeb.abidin"
-                          target="_blank"
-                        >
-                          <FaFacebookSquare/>
-                        </Link>
+                        <SocialIcon url="https://www.facebook.com/shoeb.abidin" />
                       </li>
                       <li>
-                        <Link
-                          to="https://www.linkedin.com/in/shoeb-abedin-bab27515a"
-                          target="_blank"
-                        >
-                          <FaLinkedinIn/>
-                        </Link>
+                        <SocialIcon url="https://www.linkedin.com/in/shoeb-abedin-bab27515a" />
                       </li>
                       <li>
-                        <Link
-                          to="https://dribbble.com/shoebabeidn12"
-                          target="_blank"
-                        >
-                          <BsDribbble/>
-                        </Link>
+                        <SocialIcon url="https://dribbble.com/shoebabeidn12" />
+                      </li>
+                      <li>
+                        <SocialIcon url="https://github.com/shoebabedin12" />
                       </li>
                     </ul>
                   </p>

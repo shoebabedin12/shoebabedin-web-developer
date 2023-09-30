@@ -372,6 +372,10 @@ figure {
 .fh5co-social-icons {
   margin: 0;
   padding: 0;
+  /* display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px; */
 }
 .fh5co-social-icons li {
   margin: 0;
@@ -380,16 +384,17 @@ figure {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  /* display: inline; */
 }
 .fh5co-social-icons li a {
   display: -moz-inline-stack;
   display: inline-block;
   zoom: 1;
-  *display: inline;
+  /* display: inline; */
   color: rgba(10, 102, 194, 0.9);
   padding-left: 10px;
   padding-right: 10px;
+  margin-right: 5px;
 }
 .fh5co-social-icons li a i {
   font-size: 20px;
@@ -422,7 +427,7 @@ figure {
   -ms-border-radius: 2px;
   border-radius: 2px;
 }
-#fh5co-about .fh5co-social-icons li a.twitter {
+/* #fh5co-about .fh5co-social-icons li a.twitter {
   background: #26a7de;
 }
 #fh5co-about .fh5co-social-icons li a.facebook {
@@ -433,15 +438,15 @@ figure {
 }
 #fh5co-about .fh5co-social-icons li a.dribble {
   background: #ea4c89;
-}
+} */
 
 #fh5co-about .fh5co-social-icons li a i,
 #fh5co-about .fh5co-social-icons li a svg {
   font-size: 20px;
 }
-#fh5co-about .fh5co-social-icons li a:hover {
+/* #fh5co-about .fh5co-social-icons li a:hover {
   background: rgba(10, 102, 194, 0.9);
-}
+} */
 
 .fh5co-heading {
   margin-bottom: 5em;

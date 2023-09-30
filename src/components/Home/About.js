@@ -1,8 +1,5 @@
 import React from "react";
-import { AiOutlineTwitter } from "react-icons/ai";
-import { BsDribbble } from "react-icons/bs";
-import { FaFacebookSquare, FaLinkedinIn } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { SocialIcon } from "react-social-icons";
 
 const About = () => {
   return (
@@ -46,36 +43,19 @@ const About = () => {
               <p>
                 <ul className="fh5co-social-icons">
                   <li>
-                    <Link
-                      to="https://twitter.com/shoebabedin12"
-                      target="_blank" className="twitter"
-                    >
-                      <AiOutlineTwitter />
-                    </Link>
+                    <SocialIcon url="https://twitter.com/shoebabedin12" />
                   </li>
                   <li>
-                    <Link
-                      to="https://www.facebook.com/shoeb.abidin"
-                      target="_blank" className="facebook"
-                    >
-                      <FaFacebookSquare/>
-                    </Link>
+                    <SocialIcon url="https://www.facebook.com/shoeb.abidin" />
                   </li>
                   <li>
-                    <Link
-                      to="linkedin.com/in/shoeb-abedin-bab27515a"
-                      target="_blank" className="linkedin"
-                    >
-                      <FaLinkedinIn/>
-                    </Link>
+                    <SocialIcon url="https://www.linkedin.com/in/shoeb-abedin-bab27515a" />
                   </li>
                   <li>
-                    <Link
-                      to="https://dribbble.com/shoebabeidn12"
-                      target="_blank" className="dribble"
-                    >
-                      <BsDribbble/>
-                    </Link>
+                    <SocialIcon url="https://dribbble.com/shoebabeidn12" />
+                  </li>
+                  <li>
+                    <SocialIcon url="https://github.com/shoebabedin12" />
                   </li>
                 </ul>
               </p>
