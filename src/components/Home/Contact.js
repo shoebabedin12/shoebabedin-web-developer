@@ -8,7 +8,7 @@ const Contact = () => {
           <img
             src={require("./../../assets/images/cover_bg_1.jpg")}
             className="img-fluid"
-            alt=""
+            alt="cover_bg_1"
           />
           <div className="overlay"></div>
         </div>

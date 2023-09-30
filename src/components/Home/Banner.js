@@ -26,7 +26,7 @@ const Banner = () => {
                   <div
                     className="profile-thumb"
                   >
-                    <img src={require("./../../assets/images/user-3.jpeg")} className="img-fluid" alt="" />
+                    <img src={require("./../../assets/images/user-3.jpeg")} className="img-fluid" alt="user" />
                   </div>
                   <h1>
                     <span>MD Shoeb Abedin</span>

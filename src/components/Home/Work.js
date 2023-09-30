@@ -1,7 +1,6 @@
+import axios from "axios";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
-import cheerio from "cheerio";
 
 const Work = () => {
   const [url, setUrl] = useState("");
@@ -50,7 +49,7 @@ const Work = () => {
                 <img
                   src={require("./../../assets/images/portfolio/tribel-public-trending.png")}
                   className="img-fluid"
-                  alt=""
+                  alt="tribel"
                 />
                 <div className="desc">
                   <h3>Tribel</h3>
@@ -66,7 +65,7 @@ const Work = () => {
                 <img
                   src={require("./../../assets/images/portfolio/m-tribel-public-trending.png")}
                   className="img-fluid"
-                  alt=""
+                  alt="m-tribel"
                 />
                 <div className="desc">
                   <h3>Tribel Mobile</h3>
@@ -83,7 +82,7 @@ const Work = () => {
                 <img
                   src={require("./../../assets/images/portfolio/thedoodleinc.png")}
                   className="img-fluid"
-                  alt=""
+                  alt="the doodle inc"
                 />
                 <div className="desc">
                   <h3>The Doodle Inc.</h3>
@@ -99,7 +98,7 @@ const Work = () => {
                 <img
                   src={require("./../../assets/images/portfolio/ctoforumbd-org.png")}
                   className="img-fluid"
-                  alt=""
+                  alt="cto forum bd"
                 />
                 <div className="desc">
                   <h3>CTO Forum</h3>
@@ -116,7 +115,7 @@ const Work = () => {
                 <img
                   src={require("./../../assets/images/portfolio/famglam.png")}
                   className="img-fluid"
-                  alt=""
+                  alt="famglam"
                 />
                 <div className="desc">
                   <h3>FamGlam</h3>
@@ -128,7 +127,7 @@ const Work = () => {
                 <img
                   src={require("./../../assets/images/portfolio/shangon-shop.png")}
                   className="img-fluid"
-                  alt=""
+                  alt="shangon-shop"
                 />
                 <div className="desc">
                   <h3>Shangon-Shop</h3>
@@ -144,7 +143,7 @@ const Work = () => {
                 <img
                   src={require("./../../assets/images/portfolio/thedorothydraper.png")}
                   className="img-fluid"
-                  alt=""
+                  alt="the dorothy draper"
                 />
                 <div className="desc">
                   <h3>The Dorothy Draper</h3>
@@ -160,7 +159,7 @@ const Work = () => {
                 <img
                   src={require("./../../assets/images/portfolio/apppeople-net.png")}
                   className="img-fluid"
-                  alt=""
+                  alt="app people-net"
                 />
                 <div className="desc">
                   <h3>App People</h3>
@@ -176,7 +175,7 @@ const Work = () => {
                 <img
                   src={require("./../../assets/images/portfolio/hmweddings.png")}
                   className="img-fluid"
-                  alt=""
+                  alt="hm weddings"
                 />
                 <div className="desc">
                   <h3>HM Weddings</h3>
@@ -192,7 +191,7 @@ const Work = () => {
                 <img
                   src={require("./../../assets/images/portfolio/hmexpoprivateltd.png")}
                   className="img-fluid"
-                  alt=""
+                  alt="hm expo private ltd"
                 />
                 <div className="desc">
                   <h3>HM Expo Private Ltd</h3>
@@ -208,7 +207,7 @@ const Work = () => {
                 <img
                   src={require("./../../assets/images/portfolio/inspaceatelier.png")}
                   className="img-fluid"
-                  alt=""
+                  alt="inspace atelier"
                 />
                 <div className="desc">
                   <h3>Inspace-Atelier</h3>
@@ -224,7 +223,7 @@ const Work = () => {
                 <img
                   src={require("./../../assets/images/portfolio/watchfaceswizard.png")}
                   className="img-fluid"
-                  alt=""
+                  alt="watch faceswizard"
                 />
                 <div className="desc">
                   <h3>Watch-Faces-Wizard</h3>
@@ -240,7 +239,7 @@ const Work = () => {
                 <img
                   src={require("./../../assets/images/portfolio/smartoffice.png")}
                   className="img-fluid"
-                  alt=""
+                  alt="smart office"
                 />
                 <div className="desc">
                   <h3>Smart-Office</h3>
@@ -256,7 +255,7 @@ const Work = () => {
                 <img
                   src={require("./../../assets/images/portfolio/byslglobal.png")}
                   className="img-fluid"
-                  alt=""
+                  alt="bysl global"
                 />
                 <div className="desc">
                   <h3>BYSL-Global-Technologies</h3>
@@ -272,7 +271,7 @@ const Work = () => {
                 <img
                   src={require("./../../assets/images/portfolio/intellidigital.png")}
                   className="img-fluid"
-                  alt=""
+                  alt="intelli digital"
                 />
                 <div className="desc">
                   <h3>Intelli-Digital</h3>
