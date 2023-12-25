@@ -5,7 +5,7 @@
     "stackList": [
       {
         "id": 0,
-        "img": "HTML5.png",
+        "img": "html.png",
         "title": "HTML5"
       },
       {
@@ -16,7 +16,7 @@
       {
         "id": 2,
         "img": "Sass.png",
-        "title": "Sass"
+        "title": "Scss"
       },
       {
         "id": 3,
@@ -27,11 +27,6 @@
         "id": 4,
         "img": "Bootstrap.png",
         "title": "Bootstrap"
-      },
-      {
-        "id": 4,
-        "img": "",
-        "title": "React-Bootstrap"
       },
       {
         "id": 5,
@@ -112,7 +107,7 @@
       {
         "id": 4,
         "img": "Mongoose.js.png",
-        "title": "MySQL"
+        "title": "PostgreSQL"
       },
       {
         "id": 4,

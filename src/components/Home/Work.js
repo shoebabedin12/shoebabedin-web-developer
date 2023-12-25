@@ -1,21 +1,21 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import data from "./../../assets/json/work.json";
 
 const Work = () => {
-  const [data, setData] = useState([]);
+  // const [data, setData] = useState([]);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      await axios
-        .get("/json/work.json")
-        .then((res) => setData(res.data))
-        .catch((err) => console.log(err));
-    };
-    fetchData();
-  }, []);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     await axios
+  //       .get("/json/work.json")
+  //       .then((res) => setData(res.data))
+  //       .catch((err) => console.log(err));
+  //   };
+  //   fetchData();
+  // }, []);
 
-  console.log(data);
   return (
     <>
       <div id="fh5co-work" className="fh5co-bg-dark">
@@ -28,15 +28,15 @@ const Work = () => {
           <div className="row">
             {}
             {/* BYSL Global Technology Group */}
-            {data.map((item) => (
-              <div className="col-12">
+            {data?.map((item) => (
+              <div key={item.id} className="col-12">
                 <h1>
                   #{item.title}
                   <span></span>
                 </h1>
                 <div className="row">
                 {item.projetList.map(project=>
-                  <div className="col-md-3 text-center col-padding animate-box">
+                  <div key={project.id} className="col-md-3 text-center col-padding animate-box">
                     <Link
                       to={project.slug}
                       target="_blank"

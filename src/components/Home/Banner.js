@@ -1,20 +1,21 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { SocialIcon } from "react-social-icons";
+import data from "./../../assets/json/social.json";
 
 const Banner = () => {
-  const [data, setData] = useState([]);
+  // const [data, setData] = useState([]);
 
-  useEffect(() => {
-    const fetchData = async () => {
-      await axios
-        .get("/json/social.json")
-        .then((res) => setData(res.data))
-        .catch((err) => console.log(err));
-    };
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     await axios
+  //       .get("./../../assets/json/social.json")
+  //       .then((res) => setData(res.data))
+  //       .catch((err) => console.log(err));
+  //   };
 
-    fetchData();
-  }, []);
+  //   fetchData();
+  // }, []);
   return (
     <>
       <header

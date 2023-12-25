@@ -20,6 +20,12 @@
         "title": "Intelli-Digital",
         "img": "intellidigital.png",
         "slug": "https://www.intellidigital.com/"
+      },
+      {
+        "id": 3,
+        "title": "Intelli-Global",
+        "img": "intelli-global.png",
+        "slug": "https://intelli.global/"
       }
     ]
   },
@@ -47,30 +53,24 @@
       },
       {
         "id": 3,
-        "title": "The Doodle Inc.",
-        "img": "thedoodleinc.png",
-        "slug": "https://www.thedoodleinc.com/"
-      },
-      {
-        "id": 4,
         "title": "CTO Forum",
         "img": "ctoforumbd-org.png",
         "slug": "https://www.ctoforumbd.org/"
       },
       {
-        "id": 5,
+        "id": 4,
         "title": "FamGlam",
         "img": "famglam.png",
         "slug": "https://shoebabedin12.github.io/demo/"
       },
       {
-        "id": 6,
+        "id": 5,
         "title": "Shangon-Shop",
         "img": "shangon-shop.png",
         "slug": "https://shangon.shop/"
       },
       {
-        "id": 7,
+        "id": 6,
         "title": "The Dorothy Draper",
         "img": "thedorothydraper.png",
         "slug": "http://www.thedorothydraper.com/"

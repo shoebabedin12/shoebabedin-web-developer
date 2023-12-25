@@ -1,31 +1,33 @@
 import axios from "axios";
 import React, { useEffect, useState } from "react";
 import { FaGraduationCap, FaSuitcase } from "react-icons/fa";
+import data from "./../../assets/json/work-experience.json";
+import education from "./../../assets/json/education.json";
 
 const Resume = () => {
-  const [data, setData] = useState([]);
-  const [education, setEducation] = useState([]);
+  // const [data, setData] = useState([]);
+  // const [education, setEducation] = useState([]);
 
-  useEffect(() => {
-    const workExperience = async () => {
-      await axios
-        .get("/json/work-experience.json")
-        .then((res) => setData(res.data))
-        .catch((err) => console.log(err));
-    };
+  // useEffect(() => {
+  //   const workExperience = async () => {
+  //     await axios
+  //       .get("/json/work-experience.json")
+  //       .then((res) => setData(res.data))
+  //       .catch((err) => console.log(err));
+  //   };
 
 
 
-    const educationData = async () => {
-      await axios
-        .get("/json/education.json")
-        .then((res) => setEducation(res.data))
-        .catch((err) => console.log(err));
-    };
+  //   const educationData = async () => {
+  //     await axios
+  //       .get("/json/education.json")
+  //       .then((res) => setEducation(res.data))
+  //       .catch((err) => console.log(err));
+  //   };
 
-    workExperience();
-    educationData();
-  }, []);
+  //   workExperience();
+  //   educationData();
+  // }, []);
   return (
     <>
       <div id="fh5co-resume" className="fh5co-bg-color">
