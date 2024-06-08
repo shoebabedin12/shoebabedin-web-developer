@@ -44,63 +44,54 @@
         "title": "Next JS"
       },
       {
-        "id": 7,
+        "id": 8,
         "img": "Angular.png",
-        "title": "Angular JS"
+        "title": "Angular"
       },
       {
-        "id": 8,
+        "id": 9,
         "img": "JavaScript.png",
         "title": "JavaScript"
       },
       {
-        "id": 8,
-        "img": "PostCSS.png",
-        "title": "PostCSS"
-      },
-      {
-        "id": 8,
+        "id": 10,
         "img": "React-Bootstrap.png",
         "title": "React-Bootstrap"
       },
       {
-        "id": 8,
+        "id": 11,
         "img": "Redux.png",
         "title": "Redux"
       },
       {
-        "id": 8,
-        "img": "TypeScript.png",
-        "title": "TypeScript"
-      },
-      {
-        "id": 8,
+        "id": 12,
         "img": "Vite.js.png",
         "title": "Vite.js"
       }
     ]
-  },
+  }
+  ,
   {
     "id": 2,
     "title": "Backend",
     "stackList": [
       {
-        "id": 1,
+        "id": 0,
         "img": "Node.js.png",
         "title": "Node Js"
       },
       {
-        "id": 2,
+        "id": 1,
         "img": "Express.png",
         "title": "Express Js"
       },
       {
-        "id": 3,
+        "id": 2,
         "img": "MongoDB.png",
         "title": "MongoDB"
       },
       {
-        "id": 4,
+        "id": 3,
         "img": "MySQL.png",
         "title": "MySQL"
       },
@@ -110,10 +101,11 @@
         "title": "PostgreSQL"
       },
       {
-        "id": 4,
+        "id": 5,
         "img": "Sequelize.png",
         "title": "Sequelize"
       }
     ]
   }
+  
 ]

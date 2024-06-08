@@ -4,7 +4,7 @@
     "degree": "Bachelors Degree",
     "instituteName": "Central University of Science & Technology",
     "startDate": "2023",
-    "endDate": "2027"
+    "endDate": "2026"
   },
   {
     "id": 2,
@@ -15,8 +15,8 @@
   },
   {
     "id": 3,
-    "degree": "Bachelors Degree",
-    "instituteName": "Central University of Science & Technology",
+    "degree": "SSC",
+    "instituteName": "Technical School And College",
     "startDate": "2008",
     "endDate": "2010"
   }
