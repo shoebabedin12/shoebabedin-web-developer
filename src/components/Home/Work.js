@@ -46,6 +46,10 @@ const Work = () => {
                           srcset={require(`./../../assets/images/portfolio/${project.img}`)}
                           alt={project.title}
                           effect="blur"
+                          wrapperProps={{
+                            // If you need to, you can tweak the effect transition using the wrapper style.
+                            style: { transitionDelay: "1s" }
+                          }}
                         />
                         <div className="desc">
                           <h3>{project.title}</h3>
