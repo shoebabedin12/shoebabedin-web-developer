@@ -1,5 +1,6 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React from "react";
+import { LazyLoadImage } from "react-lazy-load-image-component";
+import "react-lazy-load-image-component/src/effects/blur.css";
 import { Link } from "react-router-dom";
 import data from "./../../assets/json/work.json";
 
@@ -15,7 +16,6 @@ const Work = () => {
   //   };
   //   fetchData();
   // }, []);
-  
 
   return (
     <>
@@ -36,28 +36,26 @@ const Work = () => {
                   <span></span>
                 </h1>
                 <div className="row">
-                {item.projetList.map(project=>
-                  <div key={project.id} className="col-md-3 text-center col-padding animate-box">
-                    <Link
-                      to={project.slug}
-                      target="_blank"
-                      className="work"
+                  {item.projetList.map((project) => (
+                    <div
+                      key={project.id}
+                      className="col-md-3 text-center col-padding animate-box"
                     >
-                      <img
-                        src={require(`./../../assets/images/portfolio/${project.img}`)}
-                        className="img-fluid"
-                        alt="smart office"
-                      />
-                      <div className="desc">
-                        <h3>{project.title}</h3>
-                      </div>
-                    </Link>
-                  </div>
-                )}
+                      <Link to={project.slug} target="_blank" className="work">
+                        <LazyLoadImage
+                          src={require(`./../../assets/images/portfolio/${project.img}`)}
+                          alt={project.title}
+                          effect="blur"
+                        />
+                        <div className="desc">
+                          <h3>{project.title}</h3>
+                        </div>
+                      </Link>
+                    </div>
+                  ))}
                 </div>
               </div>
             ))}
-           
           </div>
         </div>
       </div>
