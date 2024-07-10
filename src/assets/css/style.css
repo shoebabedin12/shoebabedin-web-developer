@@ -395,7 +395,6 @@ figure {
   display: inline-block;
   zoom: 1;
   /* display: inline; */
- 
 }
 .fh5co-social-icons li a {
   display: -moz-inline-stack;
@@ -409,7 +408,7 @@ figure {
   width: 40px !important;
   height: 40px !important;
 }
-.fh5co-social-icons li a svg{
+.fh5co-social-icons li a svg {
   border-radius: 6px !important;
 }
 .fh5co-social-icons li a i {
@@ -446,7 +445,7 @@ figure {
   width: 30px !important;
   height: 30px !important;
 }
-#fh5co-about .fh5co-social-icons li a svg{
+#fh5co-about .fh5co-social-icons li a svg {
   border-radius: 6px !important;
 }
 /* #fh5co-about .fh5co-social-icons li a.twitter {
@@ -816,8 +815,11 @@ figure {
     height: 270px;
   }
 }
-
-.work img {
+.work span {
+  width: 100%;
+  height: 100%;
+}
+.work span img {
   width: 100%;
   height: 100%;
   object-fit: cover;
@@ -1536,14 +1538,12 @@ input[type="text"] {
   color: #fff;
 }
 
-
 #fh5co-consult .btn {
   background-color: var(--backgroundColor);
   border: 0;
 }
 
-
-.date-format{
+.date-format {
   display: flex;
   align-items: center;
   justify-content: flex-start;
