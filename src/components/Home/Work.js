@@ -43,7 +43,7 @@ const Work = () => {
                     >
                       <Link to={project.slug} target="_blank" className="work">
                         <LazyLoadImage
-                          src={require(`./../../assets/images/portfolio/${project.img}`)}
+                          srcset={require(`./../../assets/images/portfolio/${project.img}`)}
                           alt={project.title}
                           effect="blur"
                         />
