@@ -76,7 +76,7 @@
       {
         "id": 10,
         "title": "React-Bootstrap",
-        "iconComponent": "ReactOriginalWordmark",
+        "iconComponent": "ReactbootstrapOriginal",
         "style": "OriginalWordmark",
         "color": "rgba(97, 218, 251, 0.31)"
       },
