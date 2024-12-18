@@ -1,5 +1,4 @@
-import axios from "axios";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { SocialIcon } from "react-social-icons";
 import data from "./../../assets/json/social.json";
 
@@ -24,9 +23,7 @@ const Banner = () => {
         role="banner"
         data-stellar-background-ratio="0.5"
       >
-        <div className="overlay">
-          
-        </div>
+        <div className="overlay"></div>
         <div className="container">
           <div className="row">
             <div className="col-md-12 text-center position-relative">

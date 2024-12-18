@@ -32,6 +32,12 @@
         "title": "KX Sourcing",
         "img": "kxsourcing.png",
         "slug": "https://kxsourcing.com/"
+      },
+      {
+        "id": 3,
+        "title": "Intelli Applications",
+        "img": "intelli-application.png",
+        "slug": "https://apps.intelli.global/"
       }
     ]
   },
@@ -142,7 +148,7 @@
         "slug": "https://preview.themeforest.net/item/restfast-fast-food-and-restaurant-tailwind-css-template/full_screen_preview/54259971?_ga=2.110284227.772994421.1726068773-1022521049.1685198264"
       },
       {
-        "id": 1,
+        "id": 2,
         "title": "Restfast - Fast Food Restaurant React NextJS Template",
         "img": "Restfast-react.webp",
         "slug": "https://preview.themeforest.net/item/restfast-fast-food-restaurant-react-nextjs-template/full_screen_preview/55759959?_ga=2.68507542.649121926.1734424373-386833861.1670484117"
