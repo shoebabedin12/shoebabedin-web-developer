@@ -93,6 +93,20 @@
         "iconComponent": "ViteOriginal",
         "style": "Original",
         "color": "rgba(100, 108, 255, 0.31)"
+      },
+      {
+        "id": 13,
+        "title": "Vue.js",
+        "iconComponent": "VuejsOriginal",
+        "style": "Original",
+        "color": "rgb(65, 184, 131, .31)"
+      },
+      {
+        "id": 14,
+        "title": "Nuxt.js",
+        "iconComponent": "NuxtjsOriginal",
+        "style": "Original",
+        "color": "rgb(16, 135, 117,  .31)"
       }
     ]
   },

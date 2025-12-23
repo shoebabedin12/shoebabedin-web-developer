@@ -7,7 +7,7 @@
         "id": 0,
         "title": "Smart-Office",
         "img": "smartoffice.png",
-        "slug": "http://smartoffice.io/"
+        "slug": "https://smartoffice.ai/"
       },
       {
         "id": 1,
@@ -23,21 +23,15 @@
       },
       {
         "id": 3,
-        "title": "Intelli-Global",
-        "img": "intelli-global.png",
-        "slug": "https://intelli.global/"
-      },
-      {
-        "id": 3,
         "title": "KX Sourcing",
         "img": "kxsourcing.png",
         "slug": "https://kxsourcing.com/"
       },
       {
-        "id": 3,
-        "title": "Intelli Applications",
-        "img": "intelli-application.png",
-        "slug": "https://apps.intelli.global/"
+        "id": 4,
+        "title": "Illeyeen",
+        "img": "ilyn-global.png",
+        "slug": "https://ilyn.global/"
       }
     ]
   },

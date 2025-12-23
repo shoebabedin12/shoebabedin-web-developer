@@ -6,6 +6,7 @@ import HireMe from "../components/Home/HireMe";
 import Resume from "../components/Home/Resume";
 import Skills from "../components/Home/Skills";
 import Work from "../components/Home/Work";
+import Portfolio from "../components/Home/Portfolio";
 
 const Home = () => {
   return (
@@ -17,7 +18,7 @@ const Home = () => {
       <Skills />
       {/* <Portfolio /> */}
       <HireMe />
-      {/* <Contact /> */}
+      <Contact />
     </>
   );
 };
